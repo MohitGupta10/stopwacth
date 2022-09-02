@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.setButton{
+  border:1px soild red;
+  border-radius: 20px;
+  margin-left:5px;
+  width:100px;
+}
+.header{
+  border:1px solid blue;
+  color:red;
+  text-align: center;
+  font-weight: 1000;
+
+}

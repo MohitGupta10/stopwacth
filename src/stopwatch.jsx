@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../src/App.css'
 export const Stopwatch = () => {
   const [hour, setHours] = useState(0);
   const [min, setMin] = useState(0);
@@ -51,14 +52,13 @@ export const Stopwatch = () => {
   });
   return (
     <>
-      <h1>StopWatch</h1>
+      <h1 className="header">StopWatch</h1>
       <h1>
-        {" "}
         hours:{hour} min:{min} second:{second} minisecond:{milisecond}
       </h1>
-      <button onClick={onStart}>Start</button>
-      <button onClick={onStop}>Stop</button>
-      <button onClick={onReset}>Reset</button>
+      <button onClick={onStart} className="setButton">Start</button>
+      <button onClick={onStop} className="setButton">Stop</button>
+      <button onClick={onReset} className="setButton">Reset</button>
     </>
   );
 };
